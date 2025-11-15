@@ -40,7 +40,7 @@ void inserirFila(Fila *f, Pecas *p){
     f->total++
 }
 
-void remover(Fila *f, Pessoa *p){
+void remover(Fila *f, Pecas *p){
     if(filaVazia(f)){
         printf("Fila vazia. Não é possível remover!\n");
         return;
@@ -89,9 +89,6 @@ int main() {
         mostrarFila(&f);
 
     break;
-    case 2:
-        remover(&f, removida);
-        printf("Peça jogada: %s, %d\n", removida.nome, removida.id);
 
         mostrarFila(&f);
 
